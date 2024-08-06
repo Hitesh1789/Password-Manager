@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <div>
+        
+        <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li class="contact">Contact</li>
+            <li class="about">About</li>
+        </ul>
+    </div>
+    
+    <div class = "contact1">
+        hiteshmehandiratta84@gmail.com
+    </div>
+    
+    
+    <div class="about1">
+        This is a personal password manager that securely stores your passwords in local storage by encrypting them with cryptojs for security purposes.
+        
+    </div>
+</div>
+    <div class="container">
+        <h1>Your Password Manager</h1>
+        <h2>Your Passwords&nbsp;<span id="alert1" style="font-weight    : 500; font-size: medium; display: none;">Copied</span></h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+            <!-- <tr>
+                <td>Ram</td>
+                <td>Ram</td>
+            </tr> -->
+        </table>
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+            <!-- Text input for website -->
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+        
+            <!-- Submit button -->
+            <button type="submit" class="btn">Submit</button>
+          </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
